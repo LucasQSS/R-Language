@@ -2,7 +2,7 @@
 #DRE : 115197960
 
 #Escolhendo diretório:
-setwd("/home/albert/Desktop/CompFin/Trabalho1")
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 
 #Cria dataframe
 ciel3.df <- read.csv(file="CIEL3.SA.csv", header=TRUE, sep=",", stringsAsFactors=FALSE)
